@@ -3,6 +3,7 @@ import 'package:flutter_application_1/screens/Home.dart';
 import 'package:flutter_application_1/screens/GoFit.dart';
 import 'package:flutter_application_1/screens/PlantLanding.dart';
 import 'package:flutter_application_1/screens/deliveryFood.dart';
+import 'package:flutter_application_1/screens/exploreIndonesia.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,14 +16,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          useMaterial3: true,
-        ),
-        // home: Home(),
-        // home: const PlantLanding(),
-        // home: const GoFit(),
-        home: DeliveryFood());
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+      ),
+      // home: Home(),
+      // home: const PlantLanding(),
+      // home: const GoFit(),
+      home: ExploreIndonesia(),
+      // home: DeliveryFood()
+    );
   }
 }

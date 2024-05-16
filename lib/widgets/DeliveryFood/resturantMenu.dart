@@ -6,7 +6,7 @@ class RestaurantMenu extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
-      padding: EdgeInsets.symmetric(horizontal: 16),
+      padding: const EdgeInsets.symmetric(horizontal: 16),
       // margin: const EdgeInsets.only(top: 24),
       child: Row(
         // crossAxisAlignment: CrossAxisAlignment.start,

@@ -9,6 +9,7 @@ class SmallProductCard extends StatelessWidget {
       child: Row(
         children: [
           Container(
+            color: Colors.green,
             height: 120,
             width: 120,
             child: Image.network(
