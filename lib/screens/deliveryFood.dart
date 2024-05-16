@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/widgets/DeliveryFood/categories.dart';
 import 'package:flutter_application_1/widgets/DeliveryFood/menu.dart';
 import 'package:flutter_application_1/widgets/DeliveryFood/recentTitle.dart';
+import 'package:flutter_application_1/widgets/DeliveryFood/resturantMenu.dart';
 import 'package:flutter_application_1/widgets/DeliveryFood/searchBar.dart';
 
 class DeliveryFood extends StatelessWidget {
@@ -43,7 +44,14 @@ class DeliveryFood extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [SearchFood(), Category(), RecentTitle(), Menu()],
+              children: [
+                SearchFood(),
+                Category(),
+                RecentTitle(title: 'Recent Eats'),
+                Menu(),
+                RecentTitle(title: 'Restaurants'),
+                RestaurantMenu()
+              ],
             )),
       ),
     );

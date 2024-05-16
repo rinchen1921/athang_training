@@ -25,7 +25,7 @@ class Category extends StatelessWidget {
               Container(
                 height: 2,
                 width: 32,
-                color: Color.fromARGB(255, 217, 39, 39),
+                color: const Color.fromARGB(255, 217, 39, 39),
               ),
             ],
           ),

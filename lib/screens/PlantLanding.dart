@@ -38,14 +38,13 @@ class PlantLanding extends StatelessWidget {
                 ),
               ],
             ),
-            const SizedBox(width: 10), // Add space between text and image
             ClipRRect(
-              borderRadius: BorderRadius.circular(500), // Add border radius
+              borderRadius: BorderRadius.circular(500),
               child: Image.network(
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3flIHsvZtK3eU7tEnp-LSEjNznTZCn0dkcA&usqp=CAU', // Replace with your image URL
-                width: 30, // Adjust width as needed
-                height: 30, // Adjust height as needed
-                fit: BoxFit.cover, // Adjust image fit
+                width: 30,
+                height: 30,
+                fit: BoxFit.cover,
               ),
             ),
           ],
@@ -54,6 +53,7 @@ class PlantLanding extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            const SizedBox(height: 20),
             SearchBarPlant(),
             RecommendedPlants(),
             RecentlyReviewed(),
